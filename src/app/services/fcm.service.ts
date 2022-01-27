@@ -26,7 +26,7 @@ export class FcmService {
     });
 
     await PushNotifications.addListener('pushNotificationReceived', notification => {
-      console.log('Push notification received: ', notification);
+      console.log('Push notification received: ', notification.body);
     });
 
     await PushNotifications.addListener('pushNotificationActionPerformed', notification => {
