@@ -46,3 +46,9 @@ $ ionic cap sync
 ----> ionViewWillLeave: Fired when the component routing from is about to animate.
 
 ----> ionViewDidLeave: Fired when the component routing to has finished animating.
+
+
+
+TODO
+1. Impl FCM Push Notify (requred by fresh chat)
+2. Impl Fresh-Messanging
