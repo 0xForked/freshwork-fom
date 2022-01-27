@@ -1,0 +1,7 @@
+{
+  "name": "ionic-freshchat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
