@@ -34,7 +34,6 @@ public class FreshChatPlugin extends Plugin
     @PluginMethod()
     public void init(PluginCall call)
     {
-      // this key will expired in 18 days from 27 jan.
       FreshchatConfig config = new FreshchatConfig(
         "1189b29c-d543-4b3d-98e2-32608d4b7a2d",
         "1a184698-ee61-441a-8bd2-cf3933a10957"
@@ -56,19 +55,7 @@ public class FreshChatPlugin extends Plugin
     }
 
     @PluginMethod()
-    public void setUserProperties(PluginCall call)
-    {
-
-    }
-
-    @PluginMethod()
-    public void trackEvent(PluginCall call)
-    {
-
-    }
-
-    @PluginMethod()
-    public void resetUser(PluginCall call)
+    public void getUser(PluginCall call)
     {
 
     }
@@ -81,11 +68,11 @@ public class FreshChatPlugin extends Plugin
       Log.d("user_id", id);
     }
 
-    @PluginMethod()
-    public void echo(PluginCall call) {
-      String value = call.getString("value");
-      JSObject ret = new JSObject();
-      ret.put("value", value);
-      call.resolve(ret);
-    }
+    // @PluginMethod()
+    // public void echo(PluginCall call) {
+    //   String value = call.getString("value");
+    //   JSObject ret = new JSObject();
+    //   ret.put("value", value);
+    //   call.resolve(ret);
+    // }
 }

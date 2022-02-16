@@ -1,6 +1,6 @@
 import { registerPlugin } from '@capacitor/core';
 
-export interface FreshChatPlugin {
+export interface LiveChatPlugin {
   init(): Promise<{ value: object }>;
 
   setUser(options: object): Promise<{ value: object }>;
@@ -10,6 +10,6 @@ export interface FreshChatPlugin {
   showConversations(): Promise<{ value: object }>;
 }
 
-const freshChat = registerPlugin<FreshChatPlugin>('FreshChat');
+const liveChat = registerPlugin<LiveChatPlugin>('LiveChat');
 
-export default freshChat;
+export default liveChat;

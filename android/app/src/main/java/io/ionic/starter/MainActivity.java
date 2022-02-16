@@ -10,5 +10,6 @@ public class MainActivity extends BridgeActivity {
     super.onCreate(savedInstanceState);
 
     registerPlugin(FreshChatPlugin.class);
+    registerPlugin(LiveChatPlugin.class);
   }
 }
